@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "include/TinyPrintf.h"
+#include <memory.h>
+
+int main(int argc, char **argv)
+{
+	tiny_printf_putchar = (tiny_printf_putchar_ft)putchar;
+	char buf[1024];
+	memset(buf, 0xee, sizeof(buf));
+	buf[0] = 0x89;
+	buf[1023] = 0x99;
+	printf_("%M\n", buf, sizeof(buf));
+	return 0;
+}
