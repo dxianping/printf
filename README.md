@@ -97,6 +97,8 @@ The following format specifiers are supported:
 | o      | Unsigned octal |
 | x      | Unsigned hexadecimal integer (lowercase) |
 | X      | Unsigned hexadecimal integer (uppercase) |
+| m      | Printing array (lowercase) |
+| M      | Printing array (uppercase) |
 | f or F | Decimal floating point |
 | e or E | Scientific-notation (exponential) floating point |
 | g or G | Scientific or decimal floating point |
